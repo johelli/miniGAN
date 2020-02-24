@@ -1,7 +1,12 @@
 # miniGAN
 
-miniGAN is a generative adversarial network code developed as part of the 
-Exascale Computing Project's (ECP) [ExaLearn](https://www.exascaleproject.org/project/exalearn-co-design-center-for-exascale-machine-learning-technologies/) 
+
+Bird Dataset Training Data (64 images) |  Bird Dataset Predictions (64 images)
+:-------------------------:|:-------------------------:
+![](https://github.com/johelli/miniGAN/tree/master/figs/true_bird_dataset_64images.png) | ![](https://github.com/johelli/miniGAN/tree/master/figs/pred_bird_dataset_64images.png)
+
+miniGAN is a generative adversarial network code developed as part of the
+Exascale Computing Project's (ECP) [ExaLearn](https://www.exascaleproject.org/project/exalearn-co-design-center-for-exascale-machine-learning-technologies/)
 project at Sandia National Laboratories.
 
 miniGAN v. 1.0.0
@@ -14,9 +19,9 @@ Description:
 
 miniGAN is a proxy application for generative adversarial networks.
 
-The objective of the miniGAN miniapp is to model performance for training 
+The objective of the miniGAN miniapp is to model performance for training
 generator and discriminator networks.
-The GAN's generator and discriminator generate plausible 2D/3D maps and identify fake maps, respectively. 
+The GAN's generator and discriminator generate plausible 2D/3D maps and identify fake maps, respectively.
 Related applications exist in cosmology (CosmoFlow, ExaGAN) and wind energy (ExaWind).
 
 Authors: J. Austin Ellis (johelli@sandia.gov) and Siva Rajamanickam (srajama@sandia.gov)
@@ -45,10 +50,10 @@ To Install:
   + (Run `deactivate` to exit python env)
 
 2. Generate bird dataset
-  + Move to ${minigan_dir}/data 
+  + Move to ${minigan_dir}/data
   + Run `python generate_random_images.py --help` for running options
 
-3. Run `python3 minigan_driver.py --help` for running options 
+3. Run `python3 minigan_driver.py --help` for running options
   + Default dataset is "random". Switch to "--dataset bird" to use generated dataset.
 
 4. Run!
@@ -56,10 +61,10 @@ To Install:
 ### OLCF Summit instructions
 
 1. Do not run `setup_python_env.sh`, instead run `module load ibm-wml-ce/1.6.2-0` to load IBM's Watson ML Community Edition.
-2. This should contain PyTorch, Horovod, Matplotlib 
+2. This should contain PyTorch, Horovod, Matplotlib
 3. Have not been successful with Summit's standalone pip / anaconda
 
-### Experimental! 
+### Experimental!
 #### Make use of kokkos-kernels layers/operations
 
 1. In development
@@ -73,16 +78,3 @@ miniGAN is licensed under standard 3-clause BSD terms of use.  For
 specifics, please refer to the LICENSE file contained in the
 repository or distribution.  Under the terms of Contract DE-NA0003525 with NTESS,
 the U.S. Government retains certain rights in this software.
-
-
-
-
-
-
-
-
-
-
-
-
-
