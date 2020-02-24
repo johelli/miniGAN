@@ -3,7 +3,7 @@
 
 Bird Dataset Training Data (64 images) |  Bird Dataset Predictions (64 images)
 :-------------------------:|:-------------------------:
-![](https://github.com/johelli/miniGAN/tree/master/figs/true_bird_dataset_64images.png) | ![](https://github.com/johelli/miniGAN/tree/master/figs/pred_bird_dataset_64images.png)
+![](https://raw.githubusercontent.com/johelli/miniGAN/master/figs/true_bird_dataset_64images.png) | ![](https://raw.githubusercontent.com/johelli/miniGAN/master/figs/pred_bird_dataset_64images.png)
 
 miniGAN is a generative adversarial network code developed as part of the
 Exascale Computing Project's (ECP) [ExaLearn](https://www.exascaleproject.org/project/exalearn-co-design-center-for-exascale-machine-learning-technologies/)
